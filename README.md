@@ -14,7 +14,3 @@ You can also:
   - JPA
   - Hibernate 
   - MySQL
-
-
-
-  **Free Software, Hell Yeah!**
