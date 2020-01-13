@@ -1,0 +1,18 @@
+DROP SCHEMA IF EXISTS `employee_info_system` ;
+
+CREATE SCHEMA IF NOT EXISTS `employee_info_system`;
+
+USE `employee_info_system` ;
+
+DROP TABLE IF EXISTS `employee_info_system`.`employee` ;
+
+CREATE TABLE IF NOT EXISTS `employee_info_system`.`employee` (
+  `EMP_ID` INT(11) NOT NULL AUTO_INCREMENT,
+  `EMP_NAME` VARCHAR(45) NOT NULL,
+  `EMP_EMAIL` VARCHAR(45) NOT NULL,
+  `EMP_ADDRESS` VARCHAR(45) NOT NULL,
+  `EMP_SALARY` INT(11) NOT NULL,
+  PRIMARY KEY (`EMP_ID`),
+  UNIQUE INDEX `EMP_EMAIL_UNIQUE` (`EMP_EMAIL` ASC) VISIBLE,
+  UNIQUE INDEX `EMP_ID_UNIQUE` (`EMP_ID` ASC) VISIBLE)
+
